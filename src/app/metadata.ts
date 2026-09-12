@@ -3,22 +3,22 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   metadataBase: new URL('https://w3pk.w3hc.org'),
 
-  title: 'Genji',
-  description: 'Next.js Web3 starter with passkey auth',
+  title: 'bertux-apology',
+  description: 'Bertux website',
 
-  keywords: ['Genji', 'w3pk', 'WebAuthn', 'Next.js', 'Web3', 'Ethereum'],
+  keywords: ['bertux-apology', 'w3pk', 'WebAuthn', 'Next.js', 'Web3', 'Ethereum'],
   authors: [{ name: 'W3HC', url: 'https://github.com/w3hc' }],
 
   openGraph: {
-    title: 'Genji',
-    description: 'Next.js Web3 starter with passkey auth',
-    siteName: 'Genji',
+    title: 'bertux-apology',
+    description: 'Bertux website',
+    siteName: 'bertux-apology',
     images: [
       {
         url: '/huangshan.png',
         width: 1200,
         height: 630,
-        alt: 'Next.js Web3 starter with passkey auth',
+        alt: 'Bertux website',
       },
     ],
     locale: 'en_US',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Genji',
-    description: 'Next.js Web3 starter with passkey auth',
+    title: 'bertux-apology',
+    description: 'Bertux website',
     images: ['/huangshan.png'],
     creator: '@julienbrg',
   },

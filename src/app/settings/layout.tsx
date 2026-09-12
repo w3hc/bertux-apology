@@ -1,13 +1,13 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Settings | Genji',
+  title: 'Settings | bertux-apology',
   description: 'Manage your accounts, backups, and recovery options for your w3pk wallet.',
 
   openGraph: {
-    title: 'Settings | Genji',
+    title: 'Settings | bertux-apology',
     description: 'Manage your accounts, backups, and recovery options for your w3pk wallet.',
-    siteName: 'Genji',
+    siteName: 'bertux-apology',
     images: [
       {
         url: '/huangshan.png',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Settings | Genji',
+    title: 'Settings | bertux-apology',
     description: 'Manage your accounts, backups, and recovery options for your w3pk wallet.',
     images: ['/huangshan.png'],
     creator: '@julienbrg',
