@@ -24,7 +24,6 @@ import Spinner from './Spinner'
 import { useTranslation } from '@/hooks/useTranslation'
 import { useW3PK, isNoPasskeyError } from '@/context/W3PK'
 import { useState, useEffect } from 'react'
-import { FaGithub } from 'react-icons/fa'
 import { toaster } from '@/components/ui/toaster'
 import { brandColors } from '@/theme'
 
@@ -41,24 +40,6 @@ export default function Header() {
   const shouldSlide = scrollPosition > 0
   const leftSlideValue = shouldSlide ? 2000 : 0
   const rightSlideValue = shouldSlide ? 2000 : 0
-
-  const GitHubIcon = FaGithub
-
-  const spinStyles = `
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .spin-icon {
-      animation: spin 8s linear infinite;
-      display: inline-flex;
-    }
-  `
 
   useEffect(() => {
     const handleScroll = () => {
@@ -179,7 +160,6 @@ export default function Header() {
 
   return (
     <>
-      <style dangerouslySetInnerHTML={{ __html: spinStyles }} />
       <Box as="header" py={4} position="fixed" w="100%" top={0} zIndex={10} overflow="visible">
         <Container maxW="100%" px={{ base: 4, md: 6 }} overflow="visible">
           <Flex
@@ -195,19 +175,11 @@ export default function Header() {
               suppressHydrationWarning
             >
               <Flex align="center" gap={3}>
-                <Flex align="center" gap={5}>
-                  <Link href="/">
-                    <Heading as="h3" size="md" textAlign="center">
-                      Genji
-                    </Heading>
-                  </Link>
-
-                  <Box className="spin-icon">
-                    <Link href="https://github.com/w3hc/genji" target={'_blank'}>
-                      <GitHubIcon size={20} />
-                    </Link>
-                  </Box>
-                </Flex>
+                <Link href="/">
+                  <Heading as="h3" size="md" textAlign="center">
+                    bertux-apology
+                  </Heading>
+                </Link>
               </Flex>
             </Box>
 
@@ -262,11 +234,6 @@ export default function Header() {
                 <Portal>
                   <MenuPositioner>
                     <MenuContent minWidth="auto">
-                      <Link href="/about" color="white">
-                        <MenuItem value="about" fontSize="md" px={4} py={3}>
-                          {t.navigation.about}
-                        </MenuItem>
-                      </Link>
                       <Link href="/settings" color="white">
                         <MenuItem value="settings" fontSize="md" px={4} py={3}>
                           {t.navigation.settings}
