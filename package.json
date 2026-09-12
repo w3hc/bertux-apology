@@ -1,7 +1,8 @@
 {
-  "name": "genji",
+  "name": "bertux-apology",
   "version": "3.1.1",
-  "description": "Next.js Web3 starter with passkey auth",
+  "description": "bertux website",
+  "templateVersion": "3.1.1",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -11,9 +12,7 @@
     "lint:a11y": "eslint . --no-ignore",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test:a11y": "echo '\u26a0\ufe0f  Run Lighthouse in Chrome DevTools or install pa11y: npx pa11y http://localhost:3000'",
-    "customize": "node customize.js",
-    "postinstall": "node -e \"const fs=require('fs');if(fs.existsSync('customize.js'))console.log('\\n\ud83d\udc49  Run pnpm customize to remove the example content and make this project yours\\n')\""
+    "test:a11y": "echo '⚠️  Run Lighthouse in Chrome DevTools or install pa11y: npx pa11y http://localhost:3000'"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.36.1",

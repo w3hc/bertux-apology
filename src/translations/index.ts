@@ -37,7 +37,6 @@ type TranslationKeys = {
     messageSignedDescription: (signature: string) => string
   }
   navigation: {
-    about: string
     settings: string
   }
   settings: {
@@ -440,7 +439,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `Signature: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'About',
       settings: 'Settings',
     },
     settings: {
@@ -893,7 +891,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `签名：${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: '关于',
       settings: '设置',
     },
     settings: {
@@ -1326,7 +1323,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `हस्ताक्षर: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'के बारे में',
       settings: 'सेटिंग्स',
     },
     settings: {
@@ -1791,7 +1787,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `Firma: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'Acerca de',
       settings: 'Configuración',
     },
     settings: {
@@ -2274,7 +2269,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `Signature : ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'À propos',
       settings: 'Paramètres',
     },
     settings: {
@@ -2760,7 +2754,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `التوقيع: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'حول',
       settings: 'الإعدادات',
     },
     settings: {
@@ -3210,7 +3203,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `স্বাক্ষর: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'সম্পর্কে',
       settings: 'সেটিংস',
     },
     settings: {
@@ -3687,7 +3679,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `Подпись: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'О нас',
       settings: 'Настройки',
     },
     settings: {
@@ -4165,7 +4156,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `Assinatura: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'Sobre',
       settings: 'Configurações',
     },
     settings: {
@@ -4646,7 +4636,6 @@ export const translations: Translations = {
       messageSignedDescription: signature => `دستخط: ${signature.substring(0, 20)}...`,
     },
     navigation: {
-      about: 'کے بارے میں',
       settings: 'ترتیبات',
     },
     settings: {
