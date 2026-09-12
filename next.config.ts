@@ -47,6 +47,9 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['@chakra-ui/react'],
   },
+  images: {
+    remotePatterns: [{ protocol: 'https', hostname: 'avatars.githubusercontent.com' }],
+  },
   async headers() {
     return [
       {

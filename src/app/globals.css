@@ -3,6 +3,11 @@
   --brand-primary: #8c1c84;
   --brand-secondary: #6d1566;
   --brand-accent: #45a2f8;
+  --apology-ink: #202d2a;
+  --apology-muted: #66716b;
+  --apology-paper: #f5f1e8;
+  --apology-coral: #e45f4d;
+  --apology-line: rgba(32, 45, 42, 0.16);
 }
 
 /* Keep only necessary resets */
@@ -15,6 +20,266 @@
 /* Prevent Chrome auto-translate popup globally */
 html {
   translate: no;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--apology-paper);
+  color: var(--apology-ink);
+}
+
+.apology-page {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(228, 95, 77, 0.12), transparent 22rem),
+    linear-gradient(135deg, #f8f5ed 0%, var(--apology-paper) 58%, #eee8dc 100%);
+}
+
+.apology-grid {
+  background-image: linear-gradient(var(--apology-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--apology-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.48), transparent 64%);
+}
+
+.eyebrow,
+.section-kicker {
+  color: var(--apology-coral);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.eyebrow-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--apology-coral);
+  box-shadow: 0 0 0 6px rgba(228, 95, 77, 0.14);
+}
+
+.apology-title {
+  max-width: 680px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(4.6rem, 11vw, 9.4rem);
+  font-weight: 400;
+  letter-spacing: -0.07em;
+  line-height: 0.82;
+}
+
+.apology-lede {
+  max-width: 610px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.4rem, 2.6vw, 2.25rem);
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+}
+
+.apology-copy,
+.letter-copy {
+  color: var(--apology-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.apology-copy {
+  max-width: 510px;
+}
+
+.apology-button,
+.quiet-link,
+.external-link {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.55rem;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.apology-button {
+  background: var(--apology-ink);
+  color: #fffaf1;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.9rem 1.15rem;
+}
+
+.apology-button:hover,
+.quiet-link:hover,
+.external-link:hover {
+  transform: translateY(-2px);
+}
+
+.apology-button:hover {
+  background: var(--apology-coral);
+}
+
+.quiet-link,
+.external-link {
+  color: var(--apology-ink);
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.quiet-link:hover,
+.external-link:hover {
+  color: var(--apology-coral);
+}
+
+.signature {
+  color: var(--apology-muted);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.signature-line {
+  background: var(--apology-coral);
+  height: 1px;
+  width: 42px;
+}
+
+.portrait-frame {
+  animation: portrait-in 800ms ease both;
+  border: 1px solid var(--apology-line);
+  padding: 18px;
+  transform: rotate(2.2deg);
+}
+
+.portrait-note {
+  color: var(--apology-coral);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.86rem;
+  font-style: italic;
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+.portrait-image-wrap {
+  aspect-ratio: 1;
+  background: #d9ded5;
+  overflow: hidden;
+}
+
+.portrait-image {
+  filter: saturate(0.78) contrast(1.05);
+  height: 100%;
+  object-fit: cover;
+  transition: filter 300ms ease, transform 500ms ease;
+  width: 100%;
+}
+
+.portrait-frame:hover .portrait-image {
+  filter: saturate(1) contrast(1);
+  transform: scale(1.03);
+}
+
+.portrait-name,
+.strip-title,
+.section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.portrait-name {
+  font-size: 1.3rem;
+}
+
+.portrait-meta,
+.portrait-handle {
+  color: var(--apology-muted);
+  font-size: 0.75rem;
+}
+
+.portrait-handle {
+  font-family: monospace;
+}
+
+.apology-letter,
+.profile-strip {
+  border-top: 1px solid var(--apology-line);
+  padding: 12rem 0 8rem;
+}
+
+.section-title {
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 0.95;
+  margin-top: 1rem;
+}
+
+.letter-copy {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.16rem;
+}
+
+.promise-line {
+  color: var(--apology-coral);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.profile-strip {
+  padding-bottom: 0;
+}
+
+.strip-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin-top: 0.6rem;
+}
+
+.stats-grid {
+  background: var(--apology-line);
+}
+
+.stat-cell {
+  background: rgba(248, 245, 237, 0.72);
+  min-height: 180px;
+  padding: 1.5rem;
+}
+
+.stat-cell svg {
+  color: var(--apology-coral);
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.stat-number {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.7rem;
+  line-height: 1;
+}
+
+.stat-label {
+  color: var(--apology-muted);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes portrait-in {
+  from { opacity: 0; transform: translateY(18px) rotate(5deg); }
+  to { opacity: 1; transform: translateY(0) rotate(2.2deg); }
+}
+
+@media (max-width: 768px) {
+  .apology-letter,
+  .profile-strip {
+    padding-top: 7rem;
+  }
+
+  .portrait-frame {
+    align-self: center;
+    max-width: 380px;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .portrait-frame { animation: none; }
+  .apology-button, .quiet-link, .external-link, .portrait-image { transition: none; }
 }
 
 /* Accessibility: Focus indicators */
