@@ -33,8 +33,8 @@ export default function Home() {
           The Apology of Bertux
         </Heading>
         <Text fontSize="lg" color="gray.400" fontStyle="italic" maxW="640px" mx="auto">
-          In defense of Bertrand Juglas, cryptogeek, of Bidart, Pays Basque — accused, on the
-          record of his own GitHub profile, of a great many things.
+          In defense of Bertrand Juglas, cryptogeek, of Bidart, Pays Basque — accused, on the record
+          of his own GitHub profile, of a great many things.
         </Text>
       </Box>
 
@@ -90,13 +90,18 @@ export default function Home() {
           The Verdict
         </Heading>
         <Text color="gray.300" lineHeight="tall">
-          This court finds the defendant guilty — of relentless curiosity, incurable tinkering,
-          and shipping more testnets than the rest of us combined. Sentence: to keep going.
+          This court finds the defendant guilty — of relentless curiosity, incurable tinkering, and
+          shipping more testnets than the rest of us combined. Sentence: to keep going.
         </Text>
       </Box>
 
       <HStack justify="center" gap={4} pt={4}>
-        <Button asChild bg={brandColors.primary} color="white" _hover={{ bg: brandColors.secondary }}>
+        <Button
+          asChild
+          bg={brandColors.primary}
+          color="white"
+          _hover={{ bg: brandColors.secondary }}
+        >
           <a href="https://github.com/bertux" target="_blank" rel="noopener noreferrer">
             <FaGithub style={{ marginRight: 8 }} />
             GitHub
